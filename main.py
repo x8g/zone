@@ -16,7 +16,7 @@ from discord import Embed
 
 # dont skid fag's
 # zt#7380 pw bot
-# discord.gg/3ls
+# discord.gg/fry
 
 api_key = "leak check key"
 client = commands.Bot(

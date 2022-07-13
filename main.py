@@ -42,13 +42,13 @@ async def gen(ctx, type="keys"):
         with open('keys.json', 'w') as f:
             json.dump(keys, f)
         embed=discord.Embed(title="success", description="sent key to your dms!", color=000000)
-        embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+        embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
         embed.set_footer(text=ctx.author.name)
         await ctx.send(embed=embed)
         await ctx.author.send(newkey)
     else:
         embed=discord.Embed(title="error", description="you are not an admin!", color=000000)
-        embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+        embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
         embed.set_footer(text=ctx.author.name)
         await ctx.send(embed=embed)
 
@@ -64,18 +64,18 @@ async def redeem(ctx, key):
             access.append(ctx.author.id)
             with open('access.json', 'w') as f:
                 json.dump(access, f)
-            embed=discord.Embed(title="success", description="reedemed your key!", color=000000)
+            embed=discord.Embed(title="success", description="redeemed your key!", color=000000)
             embed.set_author(name="zone", url="https://discord.com/api/oauth2/authorize?client_id=972735257516331069&permissions=274878286928&scope=bot", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
             embed.set_footer(text=ctx.author.name)
             await ctx.send(embed=embed)
         else:
             embed=discord.Embed(title="error", description="key doesn't exist!", color=000000)
-            embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+            embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
             embed.set_footer(text=ctx.author.name)
             await ctx.send(embed=embed)
     else:
         embed=discord.Embed(title="error", description="you already have access to zone!", color=000000)
-        embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+        embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
         embed.set_footer(text=ctx.author.name)
         await ctx.send(embed=embed)
 
@@ -88,17 +88,17 @@ async def revoke(ctx, id):
             with open('access.json', 'w') as f:
                 json.dump(access, f)
             embed=discord.Embed(title="success", description="removed premium from user!", color=000000)
-            embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+            embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
             embed.set_footer(text=ctx.author.name)
             await ctx.send(embed=embed)
         else:
             embed=discord.Embed(title="error", description="user doesn't have premium!", color=000000)
-            embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+            embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
             embed.set_footer(text=ctx.author.name)
             await ctx.send(embed=embed)
     else:
         embed=discord.Embed(title="error", description="you are not an admin!", color=000000)
-        embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+        embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
         embed.set_footer(text=ctx.author.name)
         await ctx.send(embed=embed)
 
@@ -118,12 +118,12 @@ async def e(ctx, mail):
                             buffer = BytesIO(content.encode('utf-8'))
                             file = discord.File(buffer, filename='passwords.txt')
                             embed=discord.Embed(title="Success!", description="please check the passwords using the file - zt", color=000000)
-                            embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+                            embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
                             embed.set_footer(text=ctx.author.name)
                             await ctx.send(embed=embed, file=file)
                             return
                         embed=discord.Embed(title="success", description="```" + content + "```", color=000000)
-                        embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+                        embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
                         embed.set_footer(text=ctx.author.name)
                         await ctx.send(embed=embed, file=file)
                     else:
@@ -138,12 +138,12 @@ async def e(ctx, mail):
                     await ctx.send(embed=embed)
         else:
             embed=discord.Embed(title="error", description="you don't have access to zone!", color=000000)
-            embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+            embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
             embed.set_footer(text=ctx.author.name)
             await ctx.send(embed=embed)
     else:
         embed=discord.Embed(title="error", description="thats not a valid email!", color=000000)
-        embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+        embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
         embed.set_footer(text=ctx.author.name)
         await ctx.send(embed=embed)
 
@@ -164,22 +164,22 @@ async def p(ctx, u):
                 buffer = BytesIO(content.encode('utf-8'))
                 file = discord.File(buffer, filename='passwords.txt')
                 embed=discord.Embed(title="Success", description="please check the passwords using the file - zt", color=000000)
-                embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+                embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
                 embed.set_footer(text=ctx.author.name)
                 await ctx.send(embed=embed, file=file)
                 return
             embed=discord.Embed(title="success", description="```" + content + "```", color=000000)
-            embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+            embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
             embed.set_footer(text=ctx.author.name)
             await ctx.send(embed=embed)
         else:
             embed=discord.Embed(title="failed", description="no passwords found", color=000000)
-            embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+            embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
             embed.set_footer(text=ctx.author.name)
             await ctx.send(embed=embed)
     else:
         embed=discord.Embed(title="failed", description=info["error"], color=000000)
-        embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+        embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
         embed.set_footer(text=ctx.author.name)
         await ctx.send(embed=embed)
 
@@ -203,17 +203,17 @@ async def start(ctx):
             }
             channel = await guild.create_text_channel(ctx.author.id, overwrites=overwrites)
             embed=discord.Embed(title="success", description=f"started private channel in <#{channel.id}>", color=000000)
-            embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+            embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
             embed.set_footer(text=ctx.author.name)
             await ctx.send(embed=embed)
         else:
             embed=discord.Embed(title="error", description="you don't have access to zone!", color=000000)
-            embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+            embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
             embed.set_footer(text=ctx.author.name)
             await ctx.send(embed=embed)
     else:
         embed=discord.Embed(title="error", description="this command only works in zone", color=000000)
-        embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+        embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
         embed.set_footer(text=ctx.author.name)
         await ctx.send(embed=embed)
 
@@ -224,30 +224,30 @@ async def close(ctx):
             for channel in ctx.guild.channels:
                 if channel.name == str(ctx.author.id):
                     embed=discord.Embed(title="success", description=f"deleted <#{channel.id}>", color=000000)
-                    embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+                    embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
                     embed.set_footer(text=ctx.author.name)
                     await ctx.send(embed=embed)
                     time.sleep(1)
                     await channel.delete()
                     return
             embed=discord.Embed(title="error", description=f"couldn't find a priv channel", color=000000)
-            embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+            embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
             embed.set_footer(text=ctx.author.name)
             await ctx.send(embed=embed)
         else:
             embed=discord.Embed(title="error", description="you don't have access to zone!", color=000000)
-            embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+            embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
             embed.set_footer(text=ctx.author.name)
             await ctx.send(embed=embed)
     else:
         embed=discord.Embed(title="error", description="this command only works in zone", color=000000)
-        embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+        embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
         embed.set_footer(text=ctx.author.name)
         await ctx.send(embed=embed)
 @client.command()
 async def shelp(ctx):
     embed=discord.Embed(title="help", color=000000)
-    embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+    embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
     embed.set_footer(text=ctx.author.name)
     embed.add_field(name=".leak", value="leakcheck cmds", inline=False)
     embed.add_field(name=".priv", value="priv cmds", inline=False)
@@ -260,7 +260,7 @@ async def shelp(ctx):
 @client.command()
 async def priv(ctx):
     embed=discord.Embed(title="priv cmds", color=000000)
-    embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+    embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
     embed.set_footer(text=ctx.author.name)
     embed.add_field(name=".start", value="create a priv channel", inline=True)
     embed.add_field(name=".close", value="close a priv channel", inline=True)
@@ -268,7 +268,7 @@ async def priv(ctx):
 @client.command()
 async def leak(ctx):
     embed=discord.Embed(title="leakcheck cmds", color=000000)
-    embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+    embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
 
     embed.set_footer(text=ctx.author.name)
     embed.add_field(name=".e", value="leakcheck a email", inline=True)
@@ -284,39 +284,22 @@ async def clear(ctx):
                 if len(channel.name) == 18 and channel.name.isdigit():
                     await channel.delete()
             embed=discord.Embed(title="success", description="cleared all priv channels!", color=000000)
-            embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+            embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
             embed.set_footer(text=ctx.author.name)
             await ctx.send(embed=embed)
         else:
             embed=discord.Embed(title="error", description="you aren't an admin", color=000000)
-            embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+            embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
             embed.set_footer(text=ctx.author.name)
             await ctx.send(embed=embed)
     else:
         embed=discord.Embed(title="error", description="this command only works in /ngf", color=000000)
-        embed.set_author(name="zone", url="https://discord.gg/ngf", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
+        embed.set_author(name="zone", url="https://discord.gg/4cs", icon_url="https://i.pinimg.com/originals/1c/d2/00/1cd200b06a8ae254a8fa749d04121d58.pngg.com/originals/eb/01/15/eb011574e03abaa674e804eb2d5be0be.jpg")
         embed.set_footer(text=ctx.author.name)
         await ctx.send(embed=embed)
 
 
 
-@client.command()
-async def tt(ctx,*,name):
- 
-  api = requests.get(f'https://api.kiwbot.org/user/{name}').json()
-  if api['status'] == 404:
-    em = discord.Embed(description='Please try again, this account is invalid, banned or doesn\'t exist',color=0xFF0000)
-    await ctx.reply(embed=em)
-  if api['status'] == 200:
-      em = discord.Embed(title=f"@{api['data']['user']['uniqueId']}",description=api['data']['user']['signature'],url=f"https://tiktok.com/@{api['data']['user']['secUid']}",color=0000000)
-    
-      em.add_field(name="Likes",value=api['data']['stats']['heartCount'])
-      em.add_field(name="Followers",value=api['data']['stats']['followerCount'],inline=False)
-      em.add_field(name="Following",value=api['data']['stats']['followingCount'])
-      em.add_field(name="Videos",value=api['data']['stats']['videoCount'])
-      em.add_field(name="Created at",value=format_timestamp(api['data']['user']['createTime'],TimestampType.SHORT_DATETIME))
-      em.set_thumbnail(url=api['data']['user']['avatarThumb'])
-      await ctx.send(embed=em)
 
 
 

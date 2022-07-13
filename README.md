@@ -1,9 +1,17 @@
-# My Discord
-[![Discord Presence](https://lanyard.cnrad.dev/api/949483790353444864)](https://discord.com/users/949483790353444864)
-
-# My website
-https://qtzt.cf
-
-# how to use?
-well just download the zip file and replace "api_key" with your leakcheck key, then all you have to do is setup all the channel ID's & user ID's in each file correctly!
-pls star bbg
+# Zone
+## Password Bot
+### how to use?
+```js
+> download the zip
+> fix all the ID's and shit
+> then run
+```
+# Credits
+```js
+> rewrite by github/b6m
+> fixed by github/x8g
+```
+# Side note
+> this bot used weleakinfo api but they got seized so I replace all the api links and shit with leakcheck :)
+#
+> this is a rewrite of a bot called silver but I fixed it.
